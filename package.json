@@ -5,8 +5,8 @@
   "source": "src/main.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx parcel src/index.html --open",
-    "build": "parcel build"
+    "dev": "npx parcel ./src/index.html --open",
+    "build": "parcel build src/index.html"
   },
   "keywords": [],
   "author": "",
