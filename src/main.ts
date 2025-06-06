@@ -1,7 +1,8 @@
 // main.ts
 import { Navbar, SimpleNavbar } from "./components/Navbar";
-import ThemeManager from "./ts/themeManager";
+import ThemeManager from "./ts/ThemeManager";
 import { renderHome } from "./pages/Home";
+import { renderProductPage } from "./pages/ProductPage";
 
 function router() {
   const app = document.getElementById("app");
@@ -13,8 +14,7 @@ function router() {
   // Route handling
   switch (hash) {
     case "#products":
-      content =
-        "<div class='p-8'><h2 class='text-3xl font-bold mb-4'>Products</h2><p>Product List coming soon...</p></div>";
+      content = renderProductPage();
       break;
     case "#categories":
       content =
