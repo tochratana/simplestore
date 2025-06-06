@@ -23,18 +23,18 @@ export function renderHome(): string {
                     <!-- Badge -->
                     <div class="slide-in inline-flex items-center px-4 py-2 rounded-full glassmorphism mb-8">
                         <div class="w-2 h-2 bg-green-400 rounded-full mr-3 pulse-ring"></div>
-                        <span class="text-sm font-medium">New Collection Available</span>
+                        <span class="text-sm font-medium text-black dark:text-white">New Collection Available</span>
                     </div>
                     
                     <!-- Main Heading -->
-                    <h1 class="slide-in-delay text-5xl sm:text-6xl lg:text-7xl font-black leading-tight mb-6">
+                    <h1 class="slide-in-delay text-5xl sm:text-6xl lg:text-7xl font-black leading-tight mb-6 text-black dark:text-white">
                         Discover
                         <span class="text-gradient block">Premium</span>
                         Fashion
                     </h1>
                     
                     <!-- Subheading -->
-                    <p class="slide-in-delay text-xl sm:text-2xl text-gray-300 mb-8 max-w-2xl">
+                    <p class="slide-in-delay text-xl sm:text-2xl dark:text-gray-300 mb-8 max-w-2xl text-gray-700">
                         Elevate your style with our curated collection of premium fashion pieces designed for the modern lifestyle.
                     </p>
                     
@@ -43,7 +43,7 @@ export function renderHome(): string {
                         <button class="btn-gradient shine-effect px-8 py-4 rounded-2xl font-semibold text-lg hover:scale-105 transition-all duration-300">
                             Shop Collection
                         </button>
-                        <button class="glassmorphism px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-white hover:bg-opacity-20 transition-all duration-300">
+                        <button class="glassmorphism px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-white hover:bg-opacity-20 transition-all duration-300 text-black dark:text-white">
                             Watch Story
                         </button>
                     </div>
@@ -77,7 +77,7 @@ export function renderHome(): string {
                                 30% OFF
                             </div>
                         </div>
-                        <h3 class="text-2xl font-bold mb-2">Premium Cotton Tee</h3>
+                        <h3 class="text-2xl font-bold mb-2 text-black dark:text-gray-400">Premium Cotton Tee</h3>
                         <p class="text-gray-400 mb-4">Sustainable, comfortable, stylish</p>
                         <div class="flex items-center justify-between">
                             <div class="flex items-center space-x-2">
@@ -96,7 +96,7 @@ export function renderHome(): string {
                             <div class="w-full h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg mb-3 flex items-center justify-center text-2xl">
                                 👟
                             </div>
-                            <div class="text-sm font-semibold">Sneakers</div>
+                            <div class="text-sm font-semibold text-black dark:text-white">Sneakers</div>
                             <div class="text-xs text-gray-400">From $120</div>
                         </div>
                     </div>
@@ -106,7 +106,7 @@ export function renderHome(): string {
                             <div class="w-full h-20 bg-gradient-to-r from-pink-500 to-red-500 rounded-lg mb-3 flex items-center justify-center text-2xl">
                                 👜
                             </div>
-                            <div class="text-sm font-semibold">Handbags</div>
+                            <div class="text-sm font-semibold text-black dark:text-white">Handbags</div>
                             <div class="text-xs text-gray-400">From $200</div>
                         </div>
                     </div>
@@ -116,7 +116,7 @@ export function renderHome(): string {
                             <div class="w-full h-16 bg-gradient-to-r from-green-500 to-teal-500 rounded-lg mb-3 flex items-center justify-center text-xl">
                                 ⌚
                             </div>
-                            <div class="text-xs font-semibold">Watches</div>
+                            <div class="text-xs font-semibold text-black dark:text-white">Watches</div>
                             <div class="text-xs text-gray-400">From $300</div>
                         </div>
                     </div>
