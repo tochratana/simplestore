@@ -1,0 +1,4 @@
+[build]
+base = ""          # or "frontend" or wherever your build starts
+publish = "dist"   # or "build" or whatever your output dir is
+command = "npm run build"  # or your custom build command
