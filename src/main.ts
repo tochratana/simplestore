@@ -3,6 +3,10 @@ import { Navbar, SimpleNavbar } from "./components/Navbar";
 import ThemeManager from "./ts/ThemeManager";
 import { renderHome } from "./pages/Home";
 import { renderProductPage } from "./pages/ProductPage";
+import { renderProductDetail } from "./pages/ProductDetail";
+import { Footer } from "./components/Footer";
+import { Contact } from "./pages/Contact";
+import { Aboutus } from "./pages/Aboutus";
 
 function router() {
   const app = document.getElementById("app");
@@ -12,23 +16,25 @@ function router() {
   const hash = window.location.hash;
 
   // Route handling
-  switch (hash) {
-    case "#products":
+  switch (true) {
+    case hash === "#products":
       content = renderProductPage();
       break;
-    case "#categories":
+    case hash.startsWith("#product-"):
+      const id = hash.replace("#product-", "");
+      content = renderProductDetail(id);
+      break;
+    case hash === "#categories":
       content =
         "<div class='p-8'><h2 class='text-3xl font-bold mb-4'>Categories</h2><p>Browse by category...</p></div>";
       break;
-    case "#about":
-      content =
-        "<div class='p-8'><h2 class='text-3xl font-bold mb-4'>About Us</h2><p>Learn more about SimpleStore...</p></div>";
+    case hash === "#about":
+      content = Aboutus();
       break;
-    case "#contact":
-      content =
-        "<div class='p-8'><h2 class='text-3xl font-bold mb-4'>Contact</h2><p>Get in touch with us...</p></div>";
+    case hash === "#contact":
+      content = Contact();
       break;
-    case "#account":
+    case hash === "#account":
       content =
         "<div class='p-8'><h2 class='text-3xl font-bold mb-4'>My Account</h2><p>Manage your account...</p></div>";
       break;
@@ -38,7 +44,7 @@ function router() {
   }
 
   // Render navbar + content
-  app.innerHTML = Navbar() + content;
+  app.innerHTML = Navbar() + content + Footer();
 
   // Update active nav link styling
   updateActiveNavLink(hash);
