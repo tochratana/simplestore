@@ -48,7 +48,7 @@ export function ProductCard(product: Product): string {
     new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
 
   return `
-    <div class="bg-slate-800/50 backdrop-blur-sm rounded-3xl p-6 max-w-sm w-full shadow-2xl border border-slate-700/50 hover:border-slate-600/50 transition-all duration-300 group" onclick="window.location.hash='#product-${
+    <div class="dark:bg-slate-800/50 bg-white backdrop-blur-sm rounded-3xl p-6 max-w-sm w-full shadow-2xl border border-gray-100 dark:border-slate-700/50 hover:border-slate-600/50 transition-all duration-300 group" onclick="window.location.hash='#product-${
       product.id
     }'">
         
@@ -85,14 +85,14 @@ export function ProductCard(product: Product): string {
         <!-- Product Info -->
         <div class="space-y-4">
             <!-- Title -->
-            <h3 class="text-white text-xl font-semibold leading-tight line-clamp-2" title="${
+            <h3 class="dark:text-white text-black text-xl font-semibold leading-tight line-clamp-2" title="${
               product.title
             }">
                 ${cleanTitle}
             </h3>
             
             <!-- Description -->
-            <p class="text-slate-400 text-sm leading-relaxed line-clamp-3" title="${
+            <p class="dark:text-slate-400 text-gray-700 text-sm leading-relaxed line-clamp-3" title="${
               product.description
             }">
                 ${truncatedDescription}
@@ -101,7 +101,7 @@ export function ProductCard(product: Product): string {
             <!-- Price Section -->
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-2">
-                    <span class="text-white text-2xl font-bold">$${
+                    <span class="dark:text-white text-black text-2xl font-bold">$${
                       product.price
                     }</span>
                 </div>
