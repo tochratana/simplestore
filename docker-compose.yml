@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  simplestore:
+    image: tochratana/simplestore:v1.0.4
+    container_name: simplestore
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
