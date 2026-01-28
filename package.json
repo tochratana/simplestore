@@ -15,6 +15,6 @@
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.8",
     "parcel": "^2.15.2",
-    "tailwindcss": "^4.1.8"
+    "tailwindcss": "^4.1.18"
   }
 }
