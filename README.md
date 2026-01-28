@@ -1,26 +1,26 @@
-# 🛍️ E-Commerce Website
+# E-Commerce Website
 
 This is a modern, responsive **E-Commerce Website** built using **HTML**, **CSS**, **TypeScript**, **Tailwind CSS**, and the **EscuelaJS API**. The project demonstrates product listing, detail view, search functionality, dark mode toggle, and client-side routing using the hash-based navigation system.
 
 ---
 
-## 🚀 Features
+## Features
 
-- 🔎 Search and filter products by name
-- 🖼️ Product detail view with dynamic routing
-- 🌗 Light & Dark mode toggle
-- ⚡ Fast loading UI with skeleton loading and error handling
-- 🔁 Hash-based routing (SPA behavior)
-- 🧩 Modular and reusable component structure
-- 📱 Responsive design for all devices
+- Search and filter products by name
+- Product detail view with dynamic routing
+- Light & Dark mode toggle
+- Fast loading UI with skeleton loading and error handling
+- Hash-based routing (SPA behavior)
+- Modular and reusable component structure
+- Responsive design for all devices
 
 ---
 
-## 🔗 View Site
+## View Site
 
 [link to view site here](https://storesimple.netlify.app/)
 
-## 🧱 Technologies Used
+## Technologies Used
 
 - **HTML**
 - **Tailwind CSS**
@@ -30,7 +30,7 @@ This is a modern, responsive **E-Commerce Website** built using **HTML**, **CSS*
 - **Netlify** (for Deployment)
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```bash
 src/
@@ -47,7 +47,10 @@ src/
 
 ---
 
-## 🛠️ Getting Started
+## Getting Started
+
+### Docker Hub
+[https://hub.docker.com/r/tochratana/simplestore](https://hub.docker.com/r/tochratana/simplestore)
 
 ### Prerequisites
 
